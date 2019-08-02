@@ -1,7 +1,11 @@
 spring:
   application:
     name: zuul
-    
+  rabbitmq:
+    host: 192.168.85.128
+    port: 5672
+    username: admin
+    password: admin  
 server:
   port: 3001
   
@@ -13,7 +17,7 @@ eureka:
 zuul:
   retryable: true
   
-  #会默认配置
+  #浼氶粯璁ら厤缃�
   #routes:
   #  item-service: /item-service/**
   #  user-service: /user-service/**
